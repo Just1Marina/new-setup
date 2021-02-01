@@ -1,0 +1,36 @@
+.m-footer {
+    position: bottom;
+    display: flex;
+    align-items: center; 
+    background-color: #EBEBEB;
+    box-sizing: border-box;
+    padding: 8px;
+    color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.m-footer__navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #717171;
+  }
+  li {
+    display:inline;
+    display: flex;
+  }
+  
+  li a {
+    display: block;
+    color:  #549AD8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: black;
+  }
+  

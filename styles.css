@@ -1,0 +1,23 @@
+:root  {
+/*colors*/
+--black: black;
+--white: white;
+--grey1: #717171;
+--grey2: #AAA9A9;
+--grey3: #D4D4D4;
+--grey4: #EBEBEB;
+--primary-color: #549AD8;
+--primary-shade1: #9FD2FF;
+--primary-shade2: #D0E9FF;
+
+    /*units*/
+--unit-xs: 8px;
+--unit-s: 16px;
+--unit-m: 32px;
+--unit-l: 64px;
+--unit-xl: 128px;
+
+    /*fonts*/
+--bodyfont: "Source Sans Pro";
+--headerfont: "Montserrat";
+}
