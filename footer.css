@@ -1,5 +1,6 @@
 .m-footer {
-    position: bottom;
+    position: absolute;
+    bottom: 0;
     display: flex;
     align-items: center; 
     background-color: #EBEBEB;
@@ -23,6 +24,7 @@
   }
   
   li a {
+    transition: all 0.2s;
     display: block;
     color:  #549AD8;
     text-align: center;
@@ -33,4 +35,3 @@
   li a:hover {
     background-color: black;
   }
-  

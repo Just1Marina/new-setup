@@ -1,3 +1,4 @@
+@import url(styles.css);
 .m-header {
     display: flex;
     align-items: center;
@@ -12,9 +13,8 @@
 .m-header__logo {
       padding: 8px;
       font-weight: bold;
-      color: #549AD8;
+      color: var(--primary-color);
       font-size: 16px;
-      position:absolute;
       left: 1;
       margin-right: auto;
       text-align: center;
@@ -34,6 +34,7 @@ li {
 }
 
 li a {
+  transition: all 0.2s;
   display: block;
   color:  #549AD8;
   text-align: center;
