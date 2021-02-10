@@ -1,0 +1,19 @@
+@import url(styles.css);
+.about {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: var(--unit-xs);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.h2 {
+    font-family: var(--bodyfont);
+    font-size: var(--unit-m);
+}
+
+.pabout{
+    font-family: var(--bodyfont);
+    font-size: var(--unit-s);
+}

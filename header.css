@@ -4,27 +4,28 @@
     align-items: center;
     background-color: black;
     box-sizing: border-box;
-    padding: 8px;
+    padding: var(--unit-xs);
     color: white;
     border-bottom-width: 1px;
     border-bottom-style: solid;
 }
   
 .m-header__logo {
-      padding: 8px;
+      padding: var(--unit-xs);
       font-weight: bold;
       color: var(--primary-color);
-      font-size: 16px;
+      font-size: var(--unit-s);
       left: 1;
       margin-right: auto;
       text-align: center;
+      font-family: var(--bodyfont);
 }
 .m-header__navigation {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color:black;
+
 }
 
 li {
@@ -36,12 +37,13 @@ li {
 li a {
   transition: all 0.2s;
   display: block;
-  color:  #549AD8;
+  color:  var(--primary-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: var(--bodyfont);
 }
 
 li a:hover {
-  background-color: #717171;
+  background-color: var(--grey1);
 }
