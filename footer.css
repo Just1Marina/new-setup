@@ -1,11 +1,12 @@
+@import url(styles.css);
 .m-footer {
     position: absolute;
     bottom: 0;
     display: flex;
     align-items: center; 
-    background-color: #EBEBEB;
+    background-color: var(--grey4);
     box-sizing: border-box;
-    padding: 8px;
+    padding: var(--unit-s);
     color: white;
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -16,7 +17,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #717171;
+    background-color:var(--gray1);
   }
   li {
     display:inline;
@@ -26,13 +27,9 @@
   li a {
     transition: all 0.2s;
     display: block;
-    color:  #549AD8;
+    color:  var(--primary-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-family: var(--bodyfont);
-  }
-  
-  li a:hover {
-    background-color: black;
   }
