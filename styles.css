@@ -21,3 +21,13 @@
 --bodyfont: "Source Sans Pro";
 --headerfont: "Montserrat, regular";
 }
+
+.h2 {
+    font-family: var(--bodyfont);
+    font-size: var(--unit-m);
+}
+
+.copy{
+    font-family: var(--bodyfont);
+    font-size: var(--unit-s);
+}

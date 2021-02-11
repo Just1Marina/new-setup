@@ -1,0 +1,12 @@
+@import url(styles.css);
+.contact {
+    align-items: center;
+    box-sizing: border-box;
+    padding: var(--unit-xs);
+}
+
+  
+img:hover {
+    border-radius: 12px;
+    background-color:var(--black);
+  }
