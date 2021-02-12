@@ -1,0 +1,14 @@
+@import url(styles.css);
+body, html {
+    height: 100%;
+  }
+  
+  .bg {
+    display: flex;
+    background-color: var(--black);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: var(--unit-xs);
+  }

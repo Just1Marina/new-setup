@@ -27,6 +27,12 @@
     font-size: var(--unit-m);
 }
 
+.copy-teaser{
+    color: var(--primary-color);
+    font-family: var(--bodyfont);
+    font-size: var(--unit-xl);
+}
+
 .copy{
     font-family: var(--bodyfont);
     font-size: var(--unit-s);
