@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+          @import url("header.css") screen;
+          @import url("footer.css") screen;
+          @import url("info.css") screen;
+          </style>
+       
+        <title>My Site</title>
+    </head>
+    <body>
+        <header class="m-header">
+            <div class="m-header__logo">
+              <h1>Marina Saks</h1>
+            </div>
+          
+            <nav class="m-header__navigation visible">
+              <ul>
+                <li class="active">
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="projects.html">Projects</a>
+                </li>
+                <li>
+                  <a href="aboutme.html">About Me</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          
+          </header>
+
+          
+            <h2 >Dynamic</h2>
+
+            <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <a target="_self" href="pic/dynamic.jpg"></a>
+                <img src="pic/dynamic.jpg" >
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <a target="_self" href="pic/blindBild.jpg"></a>
+                <img src="pic/blindBild.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <a target="_self" href="pic/blindBild.jpg"></a>
+                <img src="pic/blindBild.jpg">
+            </div>
+                
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <a target="_self" href="pic/blindBild.jpg"></a>
+                <img src="pic/blindBild.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <a target="_self" href="pic/blindBild.jpg"></a>
+                <img src="pic/blindBild.jpg">
+            </div>
+                
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <a target="_self" href="pic/blindBild.jpg"></a>
+                <img src="pic/blindBild.jpg">
+            </div>
+                
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                <img class="demo cursor" src="pic/dynamic.jpg" onclick="currentSlide(1)" alt="pic/blindBild.jpg">
+                </div>
+                <div class="column">
+                <img class="demo cursor" src="pic/blindBild.jpg" onclick="currentSlide(2)" alt="pic/blindBild.jpg">
+                </div>
+                <div class="column">
+                <img class="demo cursor" src="pic/blindBild.jpg" onclick="currentSlide(3)" alt="pic/blindBild.jpg">
+                </div>
+                <div class="column">
+                <img class="demo cursor" src="pic/blindBild.jpg"  onclick="currentSlide(4)" alt="pic/blindBild.jpg">
+                </div>
+                <div class="column">
+                <img class="demo cursor" src="pic/blindBild.jpg" onclick="currentSlide(5)" alt="pic/blindBild.jpg">
+                </div>    
+                <div class="column">
+                <img class="demo cursor" src="pic/blindBild.jpg" onclick="currentSlide(6)" alt="pic/blindBild.jpg">
+                </div>
+            </div>
+            </div>
+
+            <p class="copy">About this:<br>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore <br>
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br>
+                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,<br>
+                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,<br>
+                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,<br>
+                no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
+
+          <footer class="m_footer">
+            <nav class="footer__navigation visible">
+                <ul>
+                  <li class="active">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li>
+                    <a href="projects.html">Projects</a>
+                  </li>
+                  <li>
+                    <a href="aboutme.html">About Me</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Contact</a>
+                  </li>
+                  <li>
+                    <a href="impressum.html">Impressum</a>
+                  </li>
+                </ul>
+              </nav>
+        </footer>
+    </body>
+</html>
