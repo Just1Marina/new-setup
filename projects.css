@@ -1,14 +1,18 @@
 @import url(styles.css);
+.body {
+  box-sizing: border-box;
+  margin: var(--unit-xs);
+}
 
 .column {
-    float: left;
-    width: 30%;
-    padding: 5px;
-  }
+  float: left;
+  width: 20%;
+  padding: var(--unit-m);
+}
   
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
   
